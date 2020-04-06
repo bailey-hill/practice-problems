@@ -78,22 +78,26 @@ function divisible(num) {
     return !(num % 100)
   }
 
- function isSameNum(num1, num2) {
+function isSameNum(num1, num2) {
     return num1 === num2;
   }
 
-  function pingPong(arr, win) {
+function pingPong(arr, win) {
       let final = arr.map(e => [e, "Pong!"]).flat()
       return win ? final : final.slice(0, final.length - 1);
     }
 
-    function isEmpty(s) {
+function isEmpty(s) {
         if (!s) {
           return true;
         } else {
           return false;
         }
       }
+
+function reverse(arr) {
+          return arr.reverse();
+        }
   </script>
 
 </body>
