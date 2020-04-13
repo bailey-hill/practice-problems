@@ -1,122 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Practice</title>
 </head>
+
 <body>
 
   <script>
- function findPerimeter(height, width) {
-    return height + height + width + width;
-  }
-
-function findDigitAmount(num) {
-    return num.toString().length;
-  }
-
-function squared(b) {
-    return b * b;
-  }
-
-function lessThanOrEqualToZero(num) {
-    if (num <= 0) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-function matchHouses(step) {
-    if (step) {
-      return (step * 5) + 1;
+    function findPerimeter(height, width) {
+      return height + height + width + width;
     }
 
-    return 0;
-  }
-
-  function getFirstValue(arr) {
-    return arr[0];
-  }
-
-function checkEquality(a, b) {
-    if (a === b) {
-      return true;
-    } else {
-      return false;
+    function findDigitAmount(num) {
+      return num.toString().length;
     }
-  }
 
-function flip(y) {
-    if (y === 0) {
-      return 1;
-    } if (y === 1) {
+    function squared(b) {
+      return b * b;
+    }
+
+    function lessThanOrEqualToZero(num) {
+      if (num <= 0) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    function matchHouses(step) {
+      if (step) {
+        return (step * 5) + 1;
+      }
+
       return 0;
     }
-  }
 
-const str = `[head, ...tail] = [1, 2, 3, 4]`
+    function getFirstValue(arr) {
+      return arr[0];
+    }
 
-function remainder(x, y) {
-    return x % y;
-  }
+    function checkEquality(a, b) {
+      if (a === b) {
+        return true;
+      } else {
+        return false;
+      }
+    }
 
-function convert(hours, minutes) {
-    var a = (hours * 60) * 60;
-    var b = minutes * 60;
-    return a + b;
-  }
+    function flip(y) {
+      if (y === 0) {
+        return 1;
+      } if (y === 1) {
+        return 0;
+      }
+    }
 
-function timeForMilkAndCookies(date) {
-    return date.getMonth() === 11 && date.getDate() === 24;
-}
+    const str = `[head, ...tail] = [1, 2, 3, 4]`
 
-function triArea(base, height) {
-    return (base * height) / 2;
-  }
+    function remainder(x, y) {
+      return x % y;
+    }
 
-function divisible(num) {
-    return !(num % 100)
-  }
+    function convert(hours, minutes) {
+      var a = (hours * 60) * 60;
+      var b = minutes * 60;
+      return a + b;
+    }
 
-function isSameNum(num1, num2) {
-    return num1 === num2;
-  }
+    function timeForMilkAndCookies(date) {
+      return date.getMonth() === 11 && date.getDate() === 24;
+    }
 
-function pingPong(arr, win) {
+    function triArea(base, height) {
+      return (base * height) / 2;
+    }
+
+    function divisible(num) {
+      return !(num % 100)
+    }
+
+    function isSameNum(num1, num2) {
+      return num1 === num2;
+    }
+
+    function pingPong(arr, win) {
       let final = arr.map(e => [e, "Pong!"]).flat()
       return win ? final : final.slice(0, final.length - 1);
     }
 
-function isEmpty(s) {
-        if (!s) {
-          return true;
-        } else {
-          return false;
-        }
+    function isEmpty(s) {
+      if (!s) {
+        return true;
+      } else {
+        return false;
       }
+    }
 
-function reverse(arr) {
-          return arr.reverse();
-        }
+    function reverse(arr) {
+      return arr.reverse();
+    }
 
-  function getLastItem(arr) {
-    return arr[arr.length - 1];
-  }
+    function getLastItem(arr) {
+      return arr[arr.length - 1];
+    }
 
-  function animals(chickens, cows, pigs) {
+    function animals(chickens, cows, pigs) {
       let a = chickens * 2;
       let b = cows * 4;
       let c = pigs * 4;
       return a + b + c;
     }
 
-  function findPerimeter(height, width) {
-    let a = height * 2;
-    let b = width * 2;
-    return a + b;
-  }
+    function findPerimeter(height, width) {
+      let a = height * 2;
+      let b = width * 2;
+      return a + b;
+    }
 
-  function isSameNum(num1, num2) {
+    function isSameNum(num1, num2) {
       if (num1 === num2) {
         return true;
       } else {
@@ -124,14 +126,41 @@ function reverse(arr) {
       }
     }
 
-  function mysteryFunc(str) {
+    function mysteryFunc(str) {
       let result = ''
       for (let i = 0; i < str.length - 1; i += 2) {
         result += str[i].repeat(str[i + 1])
       }
       return result
     }
+
+    function redundant(str) {
+      return function f1() {
+        return str;
+      }
+    }
+
+    function concat(arr1, arr2) {
+      return arr1.concat(arr2)
+    }
+
+    function concatName(firstName, lastName) {
+      return lastName.concat(', ', firstName);
+    }
+
+    function isEvenOrOdd(num) {
+        if (num % 2 === 0) {
+          return "even";
+        } else {
+          return "odd";
+        }
+      }
+
+      function search(arr, item) {
+          return arr.indexOf(item)
+        }
   </script>
 
 </body>
+
 </html>
