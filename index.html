@@ -123,6 +123,14 @@ function reverse(arr) {
         return false;
       }
     }
+
+  function mysteryFunc(str) {
+      let result = ''
+      for (let i = 0; i < str.length - 1; i += 2) {
+        result += str[i].repeat(str[i + 1])
+      }
+      return result
+    }
   </script>
 
 </body>
