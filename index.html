@@ -163,6 +163,15 @@
     function identicalFilter(arr) {
       return arr.filter((str) => new Set(str).size === 1)
     }
+
+    function divisibleByFive(n) {
+      let num = n / 5
+      if (Number.isInteger(num)) {
+        return true
+      } else {
+        return false
+      }
+    }
   </script>
 
 </body>
