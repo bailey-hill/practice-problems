@@ -149,16 +149,20 @@
     }
 
     function isEvenOrOdd(num) {
-        if (num % 2 === 0) {
-          return "even";
-        } else {
-          return "odd";
-        }
+      if (num % 2 === 0) {
+        return "even";
+      } else {
+        return "odd";
       }
+    }
 
-      function search(arr, item) {
-          return arr.indexOf(item)
-        }
+    function search(arr, item) {
+      return arr.indexOf(item)
+    }
+
+    function identicalFilter(arr) {
+      return arr.filter((str) => new Set(str).size === 1)
+    }
   </script>
 
 </body>
