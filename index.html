@@ -149,16 +149,33 @@
     }
 
     function isEvenOrOdd(num) {
-        if (num % 2 === 0) {
-          return "even";
-        } else {
-          return "odd";
-        }
+      if (num % 2 === 0) {
+        return "even";
+      } else {
+        return "odd";
       }
+    }
 
-      function search(arr, item) {
-          return arr.indexOf(item)
-        }
+    function search(arr, item) {
+      return arr.indexOf(item)
+    }
+
+    function identicalFilter(arr) {
+      return arr.filter((str) => new Set(str).size === 1)
+    }
+
+    function divisibleByFive(n) {
+      let num = n / 5
+      if (Number.isInteger(num)) {
+        return true
+      } else {
+        return false
+      }
+    }
+
+    function search(arr, item) {
+      return arr.indexOf(item);
+    }
   </script>
 
 </body>
