@@ -176,6 +176,32 @@
     function search(arr, item) {
       return arr.indexOf(item);
     }
+
+    const unstretch = word => word.replace(/(.)\1{1,}/g, `$1`);
+
+    const arr = [1, 2, 3, 4, 5, 6]
+    let a = arr[0]
+    let b = arr[1]
+
+    function stackBoxes(n) {
+      return n * n
+    }
+
+    function lessThanOrEqualToZero(num) {
+      if (num <= 0) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    function check(arr, el) {
+      if (arr.includes(el)) {
+        return true;
+      } else {
+        return false;
+      }
+    }
   </script>
 
 </body>
