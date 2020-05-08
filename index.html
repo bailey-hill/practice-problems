@@ -206,30 +206,34 @@
     let x = /^ *([A-Z]\.)( [A-Z]\.){1,2} *$/
 
     function isLastCharacterN(word) {
-        if (word.endsWith('n')) {
-          return true
-        } else {
-          return false
-        }
+      if (word.endsWith('n')) {
+        return true
+      } else {
+        return false
       }
+    }
 
-      function profitableGamble(prob, prize, pay) {
-          if ((prob * prize) > pay) {
-            return true;
-          } else {
-            return false;
-          }
-        }
+    function profitableGamble(prob, prize, pay) {
+      if ((prob * prize) > pay) {
+        return true;
+      } else {
+        return false;
+      }
+    }
 
-        function findIndex(arr, str) {
-            return arr.indexOf(str);
-          }
+    function findIndex(arr, str) {
+      return arr.indexOf(str);
+    }
 
-          function numberSyllables(word) {
-              return word.split("-").length;
-            }
+    function numberSyllables(word) {
+      return word.split("-").length;
+    }
 
-            let str = `( {one, two} = { one : 1, two : 2}).toString()`
+    let str = `( {one, two} = { one : 1, two : 2}).toString()`
+
+    function findLargestNum(arr) {
+      return Math.max(...arr);
+    }
   </script>
 
 </body>
