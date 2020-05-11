@@ -245,6 +245,20 @@
       arr.push(a, b, c);
       return arr;
     }
+
+    function isSafeBridge(str) {
+      if (str.includes(" ")) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+
+    function monthName(num) {
+      const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
+        'September', 'October', 'November', 'December'];
+      return months[num - 1];
+    }
   </script>
 
 </body>
