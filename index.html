@@ -275,6 +275,15 @@
             return false;
           }
         }
+
+        function firstLast(arr) {
+            let firstEl = arr.shift();
+            let lastEl = arr.pop();
+            const newArr = [];
+            newArr.push(firstEl);
+            newArr.push(lastEl);
+            return newArr;
+          }
   </script>
 
 </body>
