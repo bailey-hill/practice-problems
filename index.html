@@ -264,6 +264,17 @@
         const newArr = arr.filter(el => el != null);
         return newArr;
       }
+
+      function checkPalindrome(str) {
+          const spiStr = str.split("");
+          const rev = spiStr.reverse();
+          const newStr = rev.join("");
+          if (newStr === str) {
+            return true;
+          } else {
+            return false;
+          }
+        }
   </script>
 
 </body>
