@@ -259,6 +259,11 @@
         'September', 'October', 'November', 'December'];
       return months[num - 1];
     }
+
+    function removeNull(arr) {
+        const newArr = arr.filter(el => el != null);
+        return newArr;
+      }
   </script>
 
 </body>
