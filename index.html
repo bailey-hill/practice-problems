@@ -259,6 +259,46 @@
         'September', 'October', 'November', 'December'];
       return months[num - 1];
     }
+
+    function removeNull(arr) {
+      const newArr = arr.filter(el => el != null);
+      return newArr;
+    }
+
+    function checkPalindrome(str) {
+      const spiStr = str.split("");
+      const rev = spiStr.reverse();
+      const newStr = rev.join("");
+      if (newStr === str) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    function firstLast(arr) {
+      let firstEl = arr.shift();
+      let lastEl = arr.pop();
+      const newArr = [];
+      newArr.push(firstEl);
+      newArr.push(lastEl);
+      return newArr;
+    }
+
+    function AlphabetSoup(str) {
+      const arr = str.split('');
+      const sortedArr = arr.sort();
+      const newArr = sortedArr.join('');
+      return newArr;
+    }
+
+    function isTruthy(input) {
+      if (input) {
+        return 1;
+      } else {
+        return 0;
+      }
+    }
   </script>
 
 </body>
