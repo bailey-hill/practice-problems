@@ -299,6 +299,16 @@
         return 0;
       }
     }
+
+    function testJackpot(result) {
+        const test = result.every((i) => i === result[0])
+        if (test) {
+          return true;
+        }
+        else {
+          return false;
+        }
+      }
   </script>
 
 </body>
