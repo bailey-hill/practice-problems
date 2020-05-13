@@ -309,6 +309,17 @@
           return false;
         }
       }
+
+      function missingAngle(angle1, angle2) {
+          let angle3 = 180 - (angle1 + angle2);
+          if (angle3 < 90) {
+            return "acute";
+          } if (angle3 === 90) {
+            return "right";
+          } else {
+            return "obtuse";
+          }
+        }
   </script>
 
 </body>
