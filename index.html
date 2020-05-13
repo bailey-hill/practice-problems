@@ -324,6 +324,21 @@
         function reverseCapitalize(str) {
             return str.toUpperCase().split("").reverse().join("");
           }
+
+          function retrieveMajor(semver) {
+              const char = semver.split('.')
+              return char[0];
+            }
+
+            function retrieveMinor(semver) {
+              const char = semver.split('.')
+              return char[1];
+            }
+
+            function retrievePatch(semver) {
+              const char = semver.split('.')
+              return char[2];
+            }
   </script>
 
 </body>
