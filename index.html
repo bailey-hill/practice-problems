@@ -299,6 +299,53 @@
         return 0;
       }
     }
+
+    function testJackpot(result) {
+      const test = result.every((i) => i === result[0])
+      if (test) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    }
+
+    function missingAngle(angle1, angle2) {
+      let angle3 = 180 - (angle1 + angle2);
+      if (angle3 < 90) {
+        return "acute";
+      } if (angle3 === 90) {
+        return "right";
+      } else {
+        return "obtuse";
+      }
+    }
+
+    function reverseCapitalize(str) {
+      return str.toUpperCase().split("").reverse().join("");
+    }
+
+    function retrieveMajor(semver) {
+      const char = semver.split('.')
+      return char[0];
+    }
+
+    function retrieveMinor(semver) {
+      const char = semver.split('.')
+      return char[1];
+    }
+
+    function retrievePatch(semver) {
+      const char = semver.split('.')
+      return char[2];
+    }
+
+    function howManyTimes(num) {
+      const letter = "a";
+      const a = letter.repeat(num)
+      let edabit = ("Ed" + a + "bit")
+      return edabit;
+    }
   </script>
 
 </body>
