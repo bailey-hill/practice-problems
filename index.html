@@ -346,6 +346,43 @@
       let edabit = ("Ed" + a + "bit")
       return edabit;
     }
+
+    function checkAllEven(arr) {
+      return arr.every(x => Number(x % 2) === 0)
+    }
+
+    function FizzBuzz(num) {
+      if ((num % 5) === 0 && (num % 3) === 0) {
+        return "FizzBuzz";
+      }
+      if ((num % 3) === 0) {
+        return "Fizz";
+      } if ((num % 5) === 0) {
+        return "Buzz";
+      }
+      else {
+        return num.toString();
+      }
+    }
+
+    function addEnding(arr, ending) {
+      const newArr = arr.map(i => i.concat(ending))
+      return newArr;
+    }
+
+    function nameShuffle(str) {
+      const arr = str.split(" ");
+      const rev = arr.reverse();
+      const final = rev.join(" ");
+      return final;
+    }
+
+    function diffMaxMin(arr) {
+      const min = Math.min(...arr);
+      const max = Math.max(...arr);
+      const diff = max - min;
+      return diff;
+    }
   </script>
 
 </body>
