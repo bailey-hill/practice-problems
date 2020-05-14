@@ -369,6 +369,13 @@
             const newArr = arr.map(i => i.concat(ending))
             return newArr;
           }
+
+          function nameShuffle(str) {
+              const arr = str.split(" ");
+              const rev = arr.reverse();
+              const final = rev.join(" ");
+              return final;
+            }
   </script>
 
 </body>
