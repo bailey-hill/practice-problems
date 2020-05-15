@@ -387,6 +387,14 @@
     function findSmallestNum(arr) {
         return Math.min(...arr)
       }
+
+      function hurdleJump(hurdles, jumpHeight) {
+          if (hurdles.every(i => i <= jumpHeight)) {
+            return true;
+          } else {
+            return false;
+          }
+        }
   </script>
 
 </body>
