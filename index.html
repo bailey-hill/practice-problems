@@ -383,6 +383,28 @@
       const diff = max - min;
       return diff;
     }
+
+    function findSmallestNum(arr) {
+        return Math.min(...arr)
+      }
+
+      function hurdleJump(hurdles, jumpHeight) {
+          if (hurdles.every(i => i <= jumpHeight)) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+
+        function noOdds(arr) {
+            const evens = arr.filter(i => (i % 2) === 0)
+            return evens;
+          }
+
+          function Go(num) {
+              const hiph = "-";
+              return hiph.repeat(num);
+            }
   </script>
 
 </body>
