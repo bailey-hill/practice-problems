@@ -405,6 +405,13 @@
               const hiph = "-";
               return hiph.repeat(num);
             }
+
+            const firstIndex = (hex, needle) =>
+                hex
+                  .split(' ')
+                  .map(str => String.fromCharCode(parseInt(str, 16)))
+                  .join('')
+                  .indexOf(needle);
   </script>
 
 </body>
