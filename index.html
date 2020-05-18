@@ -385,69 +385,73 @@
     }
 
     function findSmallestNum(arr) {
-        return Math.min(...arr)
+      return Math.min(...arr)
+    }
+
+    function hurdleJump(hurdles, jumpHeight) {
+      if (hurdles.every(i => i <= jumpHeight)) {
+        return true;
+      } else {
+        return false;
       }
+    }
 
-      function hurdleJump(hurdles, jumpHeight) {
-          if (hurdles.every(i => i <= jumpHeight)) {
-            return true;
-          } else {
-            return false;
-          }
-        }
+    function noOdds(arr) {
+      const evens = arr.filter(i => (i % 2) === 0)
+      return evens;
+    }
 
-        function noOdds(arr) {
-            const evens = arr.filter(i => (i % 2) === 0)
-            return evens;
-          }
+    function Go(num) {
+      const hiph = "-";
+      return hiph.repeat(num);
+    }
 
-          function Go(num) {
-              const hiph = "-";
-              return hiph.repeat(num);
-            }
+    const firstIndex = (hex, needle) =>
+      hex
+        .split(' ')
+        .map(str => String.fromCharCode(parseInt(str, 16)))
+        .join('')
+        .indexOf(needle);
 
-            const firstIndex = (hex, needle) =>
-                hex
-                  .split(' ')
-                  .map(str => String.fromCharCode(parseInt(str, 16)))
-                  .join('')
-                  .indexOf(needle);
+    function mysteryFunc(arr, num) {
+      const newArr = arr.map(i => i % num);
+      return newArr;
+    }
 
-                  function mysteryFunc(arr, num) {
-                      const newArr = arr.map(i => i % num);
-                      return newArr;
-                    }
+    function repeat(item, times) {
+      const newArr = [];
+      for (let i = 0; i < times; i++) {
+        newArr.push(item);
+      }
+      return newArr;
+    }
 
-                    function repeat(item, times) {
-                        const newArr = [];
-                        for (let i = 0; i < times; i++) {
-                          newArr.push(item);
-                        }
-                        return newArr;
-                      }
+    function additiveInverse(arr) {
+      const newArr = arr.map(i => - + i)
+      return newArr;
+    }
 
-                      function additiveInverse(arr) {
-                          const newArr = arr.map(i => - + i)
-                          return newArr;
-                        }
+    function formatDate(date) {
+      const newDate = date.split("/");
+      const rev = newDate.reverse();
+      const final = rev.join("");
+      console.log(final)
+      return final;
+    }
 
-                        function formatDate(date) {
-                            const newDate = date.split("/");
-                            const rev = newDate.reverse();
-                            const final = rev.join("");
-                            console.log(final)
-                            return final;
-                          }
+    function countdown(start) {
+      let arr = []
+      for (let i = start; i >= 0; i--) {
+        arr.push(i)
+      }
+      return arr
+    }
 
-                          function countdown(start) {
-                              let arr = []
-                              for (let i = start; i >= 0; i--) {
-                                arr.push(i)
-                              }
-                              return arr
-                            }
-
-
+    function difference(nums) {
+      const max = Math.max(...nums);
+      const min = Math.min(...nums);
+      return max - min;
+    }
   </script>
 
 </body>
