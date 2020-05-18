@@ -412,6 +412,11 @@
                   .map(str => String.fromCharCode(parseInt(str, 16)))
                   .join('')
                   .indexOf(needle);
+
+                  function mysteryFunc(arr, num) {
+                      const newArr = arr.map(i => i % num);
+                      return newArr;
+                    }
   </script>
 
 </body>
