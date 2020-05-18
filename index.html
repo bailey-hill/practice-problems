@@ -430,6 +430,16 @@
                           const newArr = arr.map(i => - + i)
                           return newArr;
                         }
+
+                        function formatDate(date) {
+                            const newDate = date.split("/");
+                            const rev = newDate.reverse();
+                            const final = rev.join("");
+                            console.log(final)
+                            return final;
+                          }
+
+
   </script>
 
 </body>
