@@ -454,26 +454,32 @@
     }
 
     function multiplyByLength(arr) {
-        const newArr = arr.map(i => arr.length * i);
-        return newArr;
+      const newArr = arr.map(i => arr.length * i);
+      return newArr;
+    }
+
+    function hasKey(obj, key) {
+      if (key in obj) {
+        return true;
+      } else {
+        return false;
       }
+    }
 
-      function hasKey(obj, key) {
-          if (key in obj) {
-            return true;
-          } else {
-            return false;
-          }
-        }
+    function countWords(str) {
+      const arr = str.split(" ");
+      return arr.length;
+    }
 
-        function countWords(str) {
-            const arr = str.split(" ");
-            return arr.length;
-          }
+    function removeVowels(str) {
+      return str.replace(/[aeiou]/gi, '')
+    }
 
-          function removeVowels(str) {
-              return str.replace(/[aeiou]/gi, '')
-            }
+    function dictionary(initial, words) {
+      const newArr = words.filter(i => initial.charAt(0) === i.charAt(0) &&
+        initial.charAt(1) === i.charAt(1));
+      return newArr;
+    }
   </script>
 
 </body>
