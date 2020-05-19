@@ -457,6 +457,14 @@
         const newArr = arr.map(i => arr.length * i);
         return newArr;
       }
+
+      function hasKey(obj, key) {
+          if (key in obj) {
+            return true;
+          } else {
+            return false;
+          }
+        }
   </script>
 
 </body>
