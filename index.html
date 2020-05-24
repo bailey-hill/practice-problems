@@ -480,6 +480,11 @@
         initial.charAt(1) === i.charAt(1));
       return newArr;
     }
+
+    const median = arr => {
+      arr.sort((a, b) => a - b);
+      return (arr[(arr.length - 1) >> 1] + arr[arr.length >> 1]) / 2
+    }
   </script>
 
 </body>
