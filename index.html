@@ -457,7 +457,6 @@
       const newArr = arr.map(i => arr.length * i);
       return newArr;
     }
-
     function hasKey(obj, key) {
       if (key in obj) {
         return true;
@@ -465,12 +464,10 @@
         return false;
       }
     }
-
     function countWords(str) {
       const arr = str.split(" ");
       return arr.length;
     }
-
     function removeVowels(str) {
       return str.replace(/[aeiou]/gi, '')
     }
