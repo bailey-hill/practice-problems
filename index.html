@@ -503,6 +503,18 @@
           return sandwich;
         }
 
+  var isPalindrome = function (x) {
+    let str = x.toString();
+    let revStr = str.split('').reverse().join('');
+    console.log(str);
+    console.log(revStr);
+    if (str === revStr) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
   </script>
 
 </body>
