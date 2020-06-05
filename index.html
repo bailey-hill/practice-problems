@@ -489,45 +489,53 @@
     const makeSandwich = (ingredients, flavour) => ingredients.flatMap(v => v === flavour ? ["bread", v, "bread"] : v);
 
     function smallerNum(n1, n2) {
-        return Math.min(n1, n2).toString();
-      }
-
-      const dailyStreak = arr =>
-          Math.max(...arr.join('').split('false').map(v => v.length / 4));
-
-      let x = /\d/;
-
-      function getFillings(sandwich) {
-          sandwich.pop();
-          sandwich.shift();
-          return sandwich;
-        }
-
-  var isPalindrome = function (x) {
-    let str = x.toString();
-    let revStr = str.split('').reverse().join('');
-    console.log(str);
-    console.log(revStr);
-    if (str === revStr) {
-      return true;
-    } else {
-      return false;
+      return Math.min(n1, n2).toString();
     }
-  };
 
-  var sortedSquares = function (A) {
-    let newArr = A.map(i => i * i);
-    console.log(newArr);
-    return newArr.sort((a, b) => a - b);
-  };
+    const dailyStreak = arr =>
+      Math.max(...arr.join('').split('false').map(v => v.length / 4));
 
-  var hammingDistance = function (x, y) {
+    let x = /\d/;
+
+    function getFillings(sandwich) {
+      sandwich.pop();
+      sandwich.shift();
+      return sandwich;
+    }
+
+    var isPalindrome = function (x) {
+      let str = x.toString();
+      let revStr = str.split('').reverse().join('');
+      console.log(str);
+      console.log(revStr);
+      if (str === revStr) {
+        return true;
+      } else {
+        return false;
+      }
+    };
+
+    var sortedSquares = function (A) {
+      let newArr = A.map(i => i * i);
+      console.log(newArr);
+      return newArr.sort((a, b) => a - b);
+    };
+
+    var hammingDistance = function (x, y) {
       return (y - x) - 1;
     };
 
     function existsHigher(arr, n) {
-        return Math.max(...arr) >= n
-      }
+      return Math.max(...arr) >= n
+    }
+
+    function checkEnding(str1, str2) {
+      return str1.endsWith(str2);
+    }
+
+    function unlucky13(nums) {
+      return nums.filter(i => (i % 13) != 0);
+    }
 
   </script>
 
