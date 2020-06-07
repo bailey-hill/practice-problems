@@ -541,6 +541,17 @@
       return arr.map(i => -i);
     }
 
+    function sameCase(str) {
+        let copy = str.slice();
+        let upper = copy.toUpperCase();
+        let lower = copy.toLowerCase();
+        if (upper === str || lower === str) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
   </script>
 
 </body>
