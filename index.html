@@ -578,6 +578,13 @@
           }
         }
 
+        function profit(info) {
+            console.log(info)
+            let costTotal = info.costPrice * info.inventory;
+            let sellTotal = info.sellPrice * info.inventory;
+            return Math.round(sellTotal - costTotal);
+          }
+
   </script>
 
 </body>
