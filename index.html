@@ -605,16 +605,16 @@
     const REGEXP = /\w+/g;
 
     function erase(s) {
-        let r = [];
-        for (let c of s) {
-          c == "#" ? r.pop() : r.push(c);
-        }
-        return r.join("");
+      let r = [];
+      for (let c of s) {
+        c == "#" ? r.pop() : r.push(c);
       }
+      return r.join("");
+    }
 
-      function checkEquals(arr1, arr2) {
-          return (arr1.toString() === arr2.toString());
-        }
+    function checkEquals(arr1, arr2) {
+      return (arr1.toString() === arr2.toString());
+    }
 
   </script>
 
