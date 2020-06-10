@@ -602,7 +602,15 @@
       return !bool
     }
 
-    const REGEXP = /\w+/g
+    const REGEXP = /\w+/g;
+
+    function erase(s) {
+        let r = [];
+        for (let c of s) {
+          c == "#" ? r.pop() : r.push(c);
+        }
+        return r.join("");
+      }
 
   </script>
 
