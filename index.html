@@ -616,6 +616,27 @@
       return (arr1.toString() === arr2.toString());
     }
 
+    function unlucky13(nums) {
+      const arr = nums.filter(i => i % 13 !== 0);
+      return arr;
+    }
+
+    function getFillings(sandwich) {
+      return sandwich.filter(i => i !== "bread");
+    }
+
+    function reverse(str) {
+      return str.split("").reverse().join("");
+    }
+
+    function firstArg() {
+      return arguments[0];
+    }
+
+    function lastArg() {
+      return arguments[arguments.length - 1];
+    }
+
   </script>
 
 </body>
