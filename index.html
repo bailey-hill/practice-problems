@@ -637,6 +637,17 @@
       return arguments[arguments.length - 1];
     }
 
+    function add(numberOne, numberTwo) {
+      let sum = Number(numberOne) + Number(numberTwo)
+      if (arguments[0] === "" || undefined || null) {
+        return "Invalid Operation";
+      } if (arguments[1] === "" || undefined || null) {
+        return "Invalid Operation";
+      } else {
+        return sum.toString();
+      }
+    }
+
   </script>
 
 </body>
