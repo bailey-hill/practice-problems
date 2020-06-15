@@ -229,7 +229,7 @@
       return word.split("-").length;
     }
 
-    let str = `( {one, two} = { one : 1, two : 2}).toString()`
+    let str1 = `( {one, two} = { one : 1, two : 2}).toString()`
 
     function findLargestNum(arr) {
       return Math.max(...arr);
@@ -495,7 +495,7 @@
     const dailyStreak = arr =>
       Math.max(...arr.join('').split('false').map(v => v.length / 4));
 
-    let x = /\d/;
+    let y = /\d/;
 
     function getFillings(sandwich) {
       sandwich.pop();
@@ -552,7 +552,7 @@
       }
     }
 
-    let str = `({ one: anotherOne, two } = { one : 1, two : 2}).toString()`
+    let str2 = `({ one: anotherOne, two } = { one : 1, two : 2}).toString()`
 
     function decomposeUrl(url) {
       let protocolCapture = url.match(/(^\w+):\/\//)
@@ -655,6 +655,25 @@
       }
       return '-1';
     }
+
+    for (var i = 0; i < 3; i++) {
+        setTimeout(() => console.log(i), 1);
+      }
+
+      for (let i = 0; i < 3; i++) {
+        setTimeout(() => console.log(i), 1);
+      }
+
+      const shape = {
+          radius: 10,
+          diameter() {
+            return this.radius * 2;
+          },
+          perimeter: () => 2 * Math.PI * this.radius,
+        };
+
+        console.log(shape.diameter());
+        console.log(shape.perimeter());
 
   </script>
 
